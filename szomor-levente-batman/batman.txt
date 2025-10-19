@@ -1,0 +1,21 @@
+[
+            ["id" => 9, "opponent" => "Ra's al Ghul", "location" => "Nanda Parbat", "duration_min" => 61, "difficulty" => 10, "year" => 2023, "batman_won" => false, "description" => "Ra's legyőzte őt, de Batman túlélte a harcot."],
+            ["id" => 3, "opponent" => "Penguin", "location" => "Iceberg Lounge", "duration_min" => 23, "difficulty" => 5, "year" => 2017, "batman_won" => true, "description" => "Batman lerohanta Pingvin titkos fegyverraktárát."],
+            ["id" => 14, "opponent" => "Poison Ivy", "location" => "Gotham Botanical Gardens", "duration_min" => 35, "difficulty" => 8, "year" => 2021, "batman_won" => true, "description" => "Batman semlegesítette Ivy méreggázt, és elfogta őt."],
+            ["id" => 1, "opponent" => "Joker", "location" => "Gotham Amusement Mile", "duration_min" => 42, "difficulty" => 8, "year" => 2018, "batman_won" => true, "description" => "Batman megállította Jokert, mielőtt robbantott volna a vidámparkban."],
+            ["id" => 16, "opponent" => "Clayface", "location" => "Gotham Docks", "duration_min" => 50, "difficulty" => 9, "year" => 2020, "batman_won" => true, "description" => "Batman befagyasztotta Clayface-et, hogy megállítsa pusztítását."],
+            ["id" => 5, "opponent" => "Catwoman", "location" => "Gotham Rooftops", "duration_min" => 15, "difficulty" => 4, "year" => 2016, "batman_won" => false, "description" => "A harc flörtbe fordult – egyik fél sem nyert igazán."],
+            ["id" => 12, "opponent" => "Deathstroke", "location" => "Gotham Docks", "duration_min" => 58, "difficulty" => 10, "year" => 2023, "batman_won" => true, "description" => "Batman szoros küzdelemben győzte le Slade Wilsont."],
+            ["id" => 2, "opponent" => "Bane", "location" => "Gotham Sewers", "duration_min" => 55, "difficulty" => 10, "year" => 2019, "batman_won" => false, "description" => "A kimerítő harcban Bane eltörte Batman gerincét."],
+            ["id" => 18, "opponent" => "Hush", "location" => "Gotham Cemetery", "duration_min" => 39, "difficulty" => 8, "year" => 2024, "batman_won" => true, "description" => "Batman leleplezte Hush valódi kilétét, és legyőzte őt."],
+            ["id" => 8, "opponent" => "Mr. Freeze", "location" => "Cryo Labs", "duration_min" => 29, "difficulty" => 7, "year" => 2021, "batman_won" => true, "description" => "Batman megtalálta a módját, hogy felmelegítse Freeze páncélját."],
+            ["id" => 6, "opponent" => "Two-Face", "location" => "Gotham Courthouse", "duration_min" => 33, "difficulty" => 6, "year" => 2021, "batman_won" => true, "description" => "Batman megakadályozta, hogy Dent felgyújtsa az épületet."],
+            ["id" => 10, "opponent" => "Harley Quinn", "location" => "Ace Chemicals", "duration_min" => 27, "difficulty" => 6, "year" => 2020, "batman_won" => true, "description" => "Harley-t sikerült elfognia, mielőtt robbantott volna."],
+            ["id" => 7, "opponent" => "Scarecrow", "location" => "Arkham Asylum", "duration_min" => 48, "difficulty" => 9, "year" => 2022, "batman_won" => true, "description" => "Batman legyőzte félelmeit és Scarecrow-t is."],
+            ["id" => 15, "opponent" => "Black Mask", "location" => "Gotham Docks", "duration_min" => 31, "difficulty" => 7, "year" => 2022, "batman_won" => true, "description" => "Batman felszámolta Black Mask fegyverkereskedelmét."],
+            ["id" => 13, "opponent" => "Killer Croc", "location" => "Gotham Sewers", "duration_min" => 46, "difficulty" => 9, "year" => 2022, "batman_won" => true, "description" => "Batman elektromos hálóval kényszerítette megadásra Crocot."],
+            ["id" => 4, "opponent" => "Riddler", "location" => "Gotham Bank", "duration_min" => 37, "difficulty" => 7, "year" => 2020, "batman_won" => true, "description" => "Megfejtette a Riddler rejtvényeit, és megmentette a túszokat."],
+            ["id" => 11, "opponent" => "Firefly", "location" => "Gotham Docks", "duration_min" => 24, "difficulty" => 5, "year" => 2019, "batman_won" => true, "description" => "Batman eloltotta a lángokat és elkapta Firefly-t."],
+            ["id" => 17, "opponent" => "Man-Bat", "location" => "Gotham Skies", "duration_min" => 44, "difficulty" => 8, "year" => 2021, "batman_won" => true, "description" => "Batman altatógázzal hatástalanította Man-Bat-et a levegőben."],
+
+]
