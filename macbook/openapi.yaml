@@ -1,0 +1,111 @@
+openapi: 3.0.0
+info:
+  title: MacBook API
+  version: 1.0.0
+servers:
+  - url: http://backend.vm1.test
+    description: VM1 backend
+  - url: http://backend.vm2.test
+    description: VM2 backend
+  - url: http://backend.vm3.test
+    description: VM3 backend
+  - url: http://backend.vm4.test
+    description: VM4 backend
+  - url: http://backend.vm5.test
+    description: VM5 backend
+paths:
+  /api/macbooks:
+    get:
+      summary: MacBookok listázása
+      description: |
+        **Listázza ki az összes MacBookot!**
+
+        Az `orderBy` query paraméter határozza meg, hogy mi alapján történjen a rendezés.
+        Csak akkor fogadja el, ha az értéke `introduced` vagy `base_ram`, különben hagyja figyelmen kívül.
+
+        Az `order` határozza meg a rendezés irányát. Értéke csak `asc` vagy `desc` lehet,
+        csak és kizárólak a kisbetűs formában fogadja el!
+
+        Amennyiben nincs a rendezés módja meghatározva,
+        úgy az adatok a felvitelük sorrendjében jelenjenek meg.
+      operationId: macbooks.index
+      tags:
+        - Macbook
+      parameters:
+        - name: orderBy
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [introduced, base_ram]
+          description: A rendezés alapjául szolgáló mező
+        - name: order
+          in: query
+          required: false
+          schema:
+            type: string
+            enum: [asc, desc]
+          description: A rendezés iránya (növekvő vagy csökkenő)
+      responses:
+        '200':
+          description: Visszaadja az összes MacBookot a megadott rendezési feltétel szerint, ha van olyan.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Macbook'
+  /api/macbooks/{id}:
+    get:
+      summary: Megjelenít egyetlen MacBookot
+      description: |
+         Keresse ki a megfelelő rekordot az adatbázisból az `id` alapján.
+      operationId: macbooks.show
+      tags:
+        - Macbook
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Egy MacBook megjelenítése
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    $ref: '#/components/schemas/Macbook'
+        '404':
+          description: Az elem nem található
+
+components:
+  schemas:
+    Macbook:
+      type: object
+      properties:
+        id:
+          type: integer
+          description: A MacBook azonosítója
+        name:
+          type: string
+          maxLength: 20
+          description: A MacBook neve
+        chip:
+          type: string
+          maxLength: 15
+          description: A MacBookban lévő chip
+        introduced:
+          type: string
+          format: date
+          nullable: true
+          description: A MacBook bemutatásának dátuma
+        base_ram:
+          type: integer
+          description: A MacBook alap model RAM-ja
